@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Message from the Heart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #d4af37;
+            --deep-navy: #080a0f;
+            --soft-white: #f4f4f4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            background-color: var(--deep-navy);
+            color: var(--soft-white);
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at top, #161b22 0%, #080a0f 100%);
+        }
+
+        /* Subtle gold frame */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 15px; bottom: 15px; left: 15px; right: 15px;
+            border: 0.5px solid rgba(212, 175, 55, 0.2);
+            pointer-events: none;
+            z-index: 2000;
+        }
+
+        /* Bottom Nav for Mobile Reach */
+        nav {
+            position: fixed;
+            bottom: 25px;
+            width: 86%;
+            left: 7%;
+            padding: 12px;
+            z-index: 3000;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 40px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-link {
+            font-family: 'Cinzel', serif;
+            text-decoration: none;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+            color: var(--gold);
+            opacity: 0.4;
+            text-transform: uppercase;
+        }
+
+        .nav-link.active {
+            opacity: 1;
+            text-shadow: 0 0 10px var(--gold);
+        }
+
+        main {
+            padding: 20px 30px 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            display: none;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1.2s ease;
+        }
+
+        section.active-section {
+            display: block;
+        }
+
+        .symbol {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            display: block;
+            filter: drop-shadow(0 0 5px var(--gold));
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .prose {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .gold-divider {
+            width: 30px;
+            height: 1px;
+            background: var(--gold);
+            margin: 20px auto;
+        }
+
+        .intent-box {
+            background: rgba(212, 175, 55, 0.03);
+            padding: 20px;
+            border-radius: 2px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .intent-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.75rem;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="grace" class="active-section">
+            <span class="symbol">🔱</span>
+            <h1>A Sacred Light</h1>
+            <p class="prose">
+                On this auspicious night of Mahashivratri, I found myself thinking of the beauty you bring into my world.
+            </p>
+            <div class="gold-divider"></div>
+            <p class="prose" style="font-size: 1.1rem;">
+                Even though our journey is just beginning, you have become the Shakti to my thoughts—the silent energy that inspires me to be a better man every day.
+            </p>
+        </section>
+
+        <section id="heart">
+            <span class="symbol">✨</span>
+            <h1>My Silent Prayer</h1>
+            <p class="prose">
+                I know you know how much I love you, but words often fall short of the truth.
+            </p>
+            <p class="prose" style="font-size: 1.1rem;">
+                Like the moon that waits for the night, I find peace in just knowing you exist. My feelings for you aren't just an emotion; they are a form of devotion—quiet, respectful, and eternal.
+            </p>
+            <div class="gold-divider"></div>
+            <p class="prose" style="font-size: 1rem; opacity: 0.8;">
+                You are my most beautiful blessing.
+            </p>
+        </section>
+
+        <section id="hope">
+            <span class="symbol">🕯️</span>
+            <h1>My Intentions</h1>
+            
+            <div class="intent-box">
+                <span class="intent-title">To Honor You</span>
+                <p style="font-style: italic; font-size: 1rem;">I promise to always hold your dignity above all else and respect the space you inhabit.</p>
+            </div>
+
+            <div class="intent-box">
+                <span class="intent-title">To Wait for You</span>
+                <p style="font-style: italic; font-size: 1rem;">Like Mahadev's infinite patience, I am here—today, tomorrow, and whenever you need a heart to lean on.</p>
+            </div>
+
+            <div class="intent-box">
+                <span class="intent-title">To Protect You</span>
+                <p style="font-style: italic; font-size: 1rem;">I vow to be the person who guards your happiness and stands by your side, through every season of life.</p>
+            </div>
+            
+            <p class="prose" style="font-size: 0.9rem; margin-top: 20px; color: var(--gold); letter-spacing: 2px;">Happy Mahashivratri</p>
+        </section>
+    </main>
+
+    <nav>
+        <div class="nav-inner">
+            <a onclick="navTo('grace')" class="nav-link active" id="n-grace">Grace</a>
+            <a onclick="navTo('heart')" class="nav-link" id="n-heart">Heart</a>
+            <a onclick="navTo('hope')" class="nav-link" id="n-hope">Hope</a>
+        </div>
+    </nav>
+
+    <script>
+        function navTo(id) {
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active-section'));
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+            document.getElementById(id).classList.add('active-section');
+            document.getElementById('n-' + id).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
